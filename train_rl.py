@@ -19,8 +19,10 @@ from ot2_gym_wrapper import OT2ReachEnv
 task = Task.init(
     project_name="OT2_RL",
     task_name="SAC_reach_laurens",
+)
+task.set_repo(
     repo="https://github.com/laurensvanbaardewijk243263/RL_ClearML",
-    repo_branch="main",
+    branch="main",
 )
 task.set_base_docker('deanis/2023y2b-rl:latest')
 task.execute_remotely(queue_name="default")
