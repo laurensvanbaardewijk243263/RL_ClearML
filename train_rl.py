@@ -29,7 +29,7 @@ task.execute_remotely(queue_name="default")
 # HYPERPARAMETERS
 # =========================================================
 HYPERPARAMS = {
-    "total_timesteps": 400000,      # more steps than friend's 300k
+    "total_timesteps": 150000,      # more steps than friend's 300k
     "learning_rate": 1e-4,          # lower than friend's 3e-4
     "buffer_size": 300000,          # larger replay buffer
     "batch_size": 512,              # larger batch than friend's 256
