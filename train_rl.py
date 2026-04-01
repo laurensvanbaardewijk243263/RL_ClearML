@@ -18,7 +18,7 @@ from ot2_gym_wrapper import OT2ReachEnv
 # =========================================================
 task = Task.init(
     project_name="OT2_RL",
-    task_name="SAC_reach_laurens",
+    task_name="SAC_reach_laurens_v2",
 )
 task.set_repo(
     repo="https://github.com/laurensvanbaardewijk243263/RL_ClearML",
