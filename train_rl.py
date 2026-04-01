@@ -31,23 +31,23 @@ task.execute_remotely(queue_name="default")
 # HYPERPARAMETERS
 # =========================================================
 HYPERPARAMS = {
-    "total_timesteps": 150000,      # more steps than friend's 300k
-    "learning_rate": 1e-4,          # lower than friend's 3e-4
-    "buffer_size": 300000,          # larger replay buffer
-    "batch_size": 512,              # larger batch than friend's 256
-    "tau": 0.01,                    # faster target network update
+    "total_timesteps": 150000,      
+    "learning_rate": 1e-4,          
+    "buffer_size": 300000,          
+    "batch_size": 512,              
+    "tau": 0.01,                    
     "gamma": 0.98,
-    "train_freq": 4,                # update every 4 steps
+    "train_freq": 4,                
     "gradient_steps": 4,
-    "learning_starts": 8000,        # longer warmup
-    "net_arch": [512, 512],         # wider network than friend's [256,256]
-    "max_steps": 400,               # longer episodes
+    "learning_starts": 8000,        
+    "net_arch": [512, 512],         
+    "max_steps": 400,               
     "vel_limit_xy": 0.10,
     "vel_limit_z": 0.25,
     "tol": 0.001,
     "settle_steps": 10,
-    "action_penalty": 0.005,        # lighter penalty than friend's 0.01
-    "success_bonus": 2.0,           # higher bonus than friend's 1.0
+    "action_penalty": 0.005,        
+    "success_bonus": 2.0,           
     "zmin_safe": 0.17,
     "zmax_safe": 0.2795,
 }
