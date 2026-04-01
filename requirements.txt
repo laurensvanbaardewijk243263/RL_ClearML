@@ -1,0 +1,5 @@
+stable-baselines3[extra]==2.3.2
+gymnasium==0.29.1
+clearml==1.16.4
+numpy
+pybullet
